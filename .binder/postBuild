@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+# Install Python dependencies
+pip install --upgrade pipenv
+pipenv install --system
+
+# Display installed versions
+python -V
+pipenv --version
+jupyter --version
+pip list
+
+# Install NLTK corpora and tokenizers
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+
+# Download data
+# https://www.laudatio-repository.org/browse/corpus/UyRUCnMB7CArCQ9C63ji/corpora
+jupyter nbconvert --to notebook --execute --inplace notebooks/04-get-data.ipynb
