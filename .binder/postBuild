@@ -4,7 +4,7 @@ set -e
 
 # Install Python dependencies
 pip install --upgrade pipenv
-pipenv install --system
+pipenv install --system --skip-lock
 
 # Display installed versions
 python -V
@@ -17,4 +17,6 @@ python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
 # Download data
 # https://www.laudatio-repository.org/browse/corpus/UyRUCnMB7CArCQ9C63ji/corpora
-jupyter nbconvert --to notebook --execute --inplace notebooks/04-get-data.ipynb
+# jupyter nbconvert --to notebook --execute --inplace notebooks/04-get-data.ipynb
+
+jupyter nbconvert --to notebook --execute --inplace notebooks/test.ipynb

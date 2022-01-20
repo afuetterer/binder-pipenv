@@ -130,3 +130,8 @@ dmypy.json
 
 # exclude data directory
 /data/
+
+# Ignore lockfile, when targeting different Python versions
+# see: https://pipenv.pypa.io/en/latest/basics/#general-recommendations-version-control
+# Python versions: Local (3.10) and mybinder.org (3.7)
+Pipfile.lock
