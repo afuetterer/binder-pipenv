@@ -32,4 +32,4 @@ jobs:
           pipenv --version
           pip list
       - name: Test
-        run: pytest --nbval-lax notebooks/test.ipynb
+        run: pytest --nbval-lax notebooks/import-libraries.ipynb
