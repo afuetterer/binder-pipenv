@@ -4,14 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-HanTa = "~=0.2"
-nltk = "~=3.6"
-pandas = "~=1.3"
+nltk = "~=3.7"
 requests = "~=2.27"
-seaborn = "~=0.11"
-stylecloud = "~=0.5"
 
-# Versions don't matter for these libraries
 session_info = "*"
 
 [dev-packages]
